@@ -24,7 +24,7 @@
           - Compare with original (diff)
         - } **commit**: commit changes
         - **Update &lt;workingBranch&gt;**
-      - } **push branch**: on &lt;branch&gt;: Compare With &lt;remote&gt;; push &lt;branch&gt;
+      - } **push branch**: checkout &lt;branch&gt;; Compare With &lt;remote&gt;; push &lt;branch&gt;
 <br/><br/>
     - ***Update &lt;workingBranch&gt;***
     - (*Pull Request goes here*)

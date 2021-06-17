@@ -107,6 +107,12 @@
       ### $TOOL_NAME$ Alternatives Considered 
     ```
 
+##### color code and swatch, with column separator
+```plaintext
+#$COLOR_CODE$ | < span style="background-color: #$COLOR_CODE$">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+```
+*(to enter in code, remove space before "span" directive)*
+
 #### Proofreading
 ##### for Documentation Files (*.md, *.html)
 - *disable checks inconsistent with our technical writing style*
@@ -158,11 +164,11 @@
   - link to GitHub issue: https://github.com/cebcar/DevOps/issues/$1
 
 #### Git
-- [ _ ] Enable staging area 
+- [ _ ] Enable staging area
 - [ _ ] Commit automatically on cherry-pick
 - [ + ] add message suffix "Cherry picked from hash" when pushing to protected branches
 - [ + ] Warn if CLRF line separators are about to be committed
-- [ + ] Warn when committing in detached HEAD or during release 
+- [ + ] Warn when committing in detached HEAD or during release
 - Explicitly check for incoming commits on remotes: Auto
 - Update method: Merge
 - Clean working tree using: Stash
@@ -189,13 +195,10 @@
   - replace spaces with '-'
 
 ##### Tasks: Servers: server GitHub
-
-
 - add Server GitHub
 - connect to server GitHub
 - General: provide credentials to connect to GitHub project; test
-- commit message: &lt;pr&gt;#${numbe
-- r}-${summary}|
+- commit message: &lt;pr&gt;#${number}-${summary}"| "
 
 ### Dialogs
 #### Print
@@ -219,11 +222,11 @@
 | | VCS | | Workflow Popup | srV |
 | | | | Put Local Label... |  scL |
 | | | Git | Fetch | rcF |
-| | | | Stash/Unstash | scH / scU | 
+| | | | Stash/Unstash | scH / scU |
 | | | | Create Pull Request | rocP |
 | | | | View Pull Requests | sroP |
 | | Help | | Find Action... | rcA |
-| Tool Windows | | | resize tool window | sc&lt;arrow&gt; | 
+| Tool Windows | | | resize tool window | sc&lt;arrow&gt; |
 | | | | last tool window | F12 | |
 | | | | hide active tool window | sEsc |
 | | | | close all tool windows | oF12 |
@@ -248,7 +251,7 @@ Features Include:
 ### Conventions
 
 - top-level Task normally named for an issue
-  - &lt;Proj&gt;#&lt;issueNum&gt; &lt;issueSummary&gt;, 
+  - &lt;Proj&gt;#&lt;issueNum&gt; &lt;issueSummary&gt;,
       using the full project and issue names as proposed by IntelliJ
 - branch name abbreviated by hand from IntelliJ-proposed branch name
   - edit to &lt;ph&gt;&lt;issueNum&gt;-&lt;abbreviatedIssueName&gt;,
@@ -279,8 +282,6 @@ Features Include:
 - from Preferences : Tools : Tasks : Servers :
   - add new server (`+` or cmd-N); supply GitHub Organization and Repo name; paste in token
   - `Test` to verify connection; Apply
-  
-#### add module .idea
 
 #### configure VCS-related tools
 - configure [Tools: Tasks](#tasks)
@@ -288,6 +289,8 @@ Features Include:
 
 #### configure Scopes
 - configure  [Appearance &amp; Behavior : Scopes](#scopes)
+
+#### add module .idea
 
 #### commit to Version Control
 - Tag and Commit
