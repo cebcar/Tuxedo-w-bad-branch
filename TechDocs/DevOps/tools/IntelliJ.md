@@ -189,7 +189,7 @@
 */TODO/ extraneous backslashes sometimes appear in Tools content*
 
 #### Tasks
-- Changelist name format: ${project}-#${id} ${summary}
+- Changelist name format: ${project}#${number}: ${summary}
 - Feature branch name format: &lt;pr&gt;${number}-${summary}
   - [x] Lowercased
   - replace spaces with '-'
@@ -256,8 +256,6 @@ Features Include:
 - branch name abbreviated by hand from IntelliJ-proposed branch name
   - edit to &lt;ph&gt;&lt;issueNum&gt;-&lt;abbreviatedIssueName&gt;,
     where 'ph' is a hardcoded project name
-- top-level Task can have multiple branches
-  - then branch names replace &lt;issueSummary&gt; with &lt;branchSummary&gt;
 
 ## Open Repository as Project
 
